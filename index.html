@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link type="text/css" rel="stylrsheet" href="style.css">
+  	</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+			  <a class="navbar-brand" href="#">
+				<img src="01.jpg" class=" img-fluid rounded" style=" max-width: 10%;  height: auto;" alt="logo"> 
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class=" ml-auto navbar-nav"style="color: #fff; font-family: Eras Demi ITC; font-size: 18px;">
+					<li class="nav-item active">
+					  <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Job Interview</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link " href="question.html">Job Question</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link " href="about.html">About US</a>
+					</li> 
+					<li class="nav-item">
+					  <a class="nav-link " data-toggle="modal" data-target="#myModal">Login</a>
+					</li>
+				</ul>
+				<form action="navbar-form" role="search">
+				  <div class="font-gorup">
+				  <input type="text" class="form-control" />
+				</form>
+			</div>
+			<button type="submit" class="btn btn-default">search</button>
+		</nav>
+  </header>
+
+  <div class="container-fluid">
+	<div class="modal fade" id="myModal">
+	  <div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		
+		  <!-- Modal Header -->
+		  <div class="modal-header">
+			<h4 class="modal-title">Login Form</h4>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		  </div>
+	  
+		  <!-- Modal body -->
+		  <div class="modal-body">
+			
+			  <form class="form" action="">
+		  
+					<label for="email">Email:</label>
+					  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+					<label for="pwd">Password:</label>
+					  <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input class="form-check-input" type="checkbox" name="remember"> Remember me
+					  </label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button> 
+				  <a href=""  data-toggle="modal" data-target="#myModalRegistration" ><button type="button" class="btn btn-primary">Registation</button></a>
+			  </form>  
+		  </div>
+		  
+		  <!-- Modal footer -->
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  </div>
+	  
+		  
+		</div>
+	  </div>
+	</div>
+
+   <!----- Registation Form  -->
+   
+   
+   <div class="modal fade" id="myModalRegistration">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+	  
+		<!-- Modal Header -->
+		<div class="modal-header">
+		  <h4 class="modal-title">Registation Form</h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+	
+		<!-- Modal body -->
+		<div class="modal-body">
+		  
+			<form class="form" action="RegistationForm.html">
+				<label for="name">Name:</label>
+				  <input type="name" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+				<label for="father's name">Father's Name:</label>
+				  <input type="father's name" class="form-control" id="Father's Name" placeholder="Enter Father's Name" name="Father's Name">
+				<label for="mother">Mother's Name:</label>
+				  <input type="mother" class="form-control" id="Mother's Name" placeholder="Enter Mother's Name" name="Mother's Name">
+				<label for="email">Email:</label>
+				  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				<label for="pwd">Password:</label>
+				  <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+				<div class="form-check">
+					<label class="form-check-label">
+					  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button> 
+			  
+			</form>  
+	  
+		</div>
+		
+		<!-- Modal footer -->
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+	 
+	<div id="demo" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="image/7.jpg" alt="Los Angeles" width="1352" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="image/4.jpg" alt="Chicago" width="1352" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="image/3.jpg" alt="New York" width="1352" height="500">
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+	</div>
+	
+	 
+	 <div class="well">
+		<div class="container-fluid">
+			<div class="page-header text-center">
+				<h1 class="text-uppercase">Ours awesome services</h1>
+				<p class="text-primary">Write some summary about your services</p>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="image/9.jpg" class="rounded-circle" alt="Cinque Terre" width="300" height="200">
+						<div class="caption text-center">
+							<h4> Services title</h4>
+							<p> the source of export remetenceof bangladesh is textile depertment.it is most importantto earn remetence.so this depertment very important in our bangladesh.</p>
+						</div>
+							<a href=""class="btn btn-info"data-toggle="modal" data-target="#mymodal1">View details</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="image/2.jpg" class="rounded-circle" alt="Cinque Terre" width="300" height="200">
+						<div class="caption text-center">
+							<h4> Services title</h4>
+							<p>We live in an age of science.the computer is the most important of every sector.like as educational banking etc.we can not thing of our extiencetanc with out it. </p>
+						</div>
+							<a href=""class="btn btn-info"data-toggle="modal" data-target="#mymodal2">View details</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="image/1.jpg" class="rounded-circle" alt="Cinque Terre" width="300" height="200">
+						<div class="caption text-center">
+							<h4> Services title</h4>
+							<p>we can see many largest building in our outer world. All that things introduction of civil.so we need expertness civil engineer in our social. </p>
+						</div>
+							<a href=""class="btn btn-info"data-toggle="modal" data-target="#mymodal3">View details</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="image/6.jpg" class="rounded-circle" alt="Cinque Terre" width="300" height="200">
+						<div class="caption text-center">
+							<h4> Services title</h4>
+							<p>We can not thinks of our recent world with out electricity .We can not thing of our extiencetanc with out it.so it is a most important of the world. </p>
+						</div>
+							<a href=""class="btn btn-info"data-toggle="modal" data-target="#mymodal4">View details</a>
+					</div>
+				</div>
+			</div><!--row-->
+	 <!--     <a class="aplly" href='RegistationForm.html'>Apply Now</a> -->
+		</div>
+	</div>
+
+	<div class="modal fade"id="mymodal1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Services hedline 1 </h4>
+				</div>
+				<div class="modal-body">
+					<p>We can not thinks of our recent world with out electricity .We can not thing of our extiencetanc with out it.so it is a most important of the world.we can see many largest building in our outer world. All that things introduction of civil.so we need expertness civil engineer in our social.We live in an age of science.the computer is the most important of every sector.like as educational banking etc.we can not thing of our extiencetanc with out it.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+						<a href="" class="btn btn-info">Contact Us</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="modal fade"id="mymodal2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Services hedline 2 </h4>
+				</div>
+				<div class="modal-body">
+					<p>We can not thinks of our recent world with out electricity .We can not thing of our extiencetanc with out it.so it is a most important of the world.we can see many largest building in our outer world. All that things introduction of civil.so we need expertness civil engineer in our social.We live in an age of science.the computer is the most important of every sector.like as educational banking etc.we can not thing of our extiencetanc with out it.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+					<a href="" class="btn btn-info">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade"id="mymodal3">
+		<div class="modal-dialog">
+			<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Services hedline 3 </h4>
+					</div>
+					<div class="modal-body">
+						<p>We can not thinks of our recent world with out electricity .We can not thing of our extiencetanc with out it.so it is a most important of the world.we can see many largest building in our outer world. All that things introduction of civil.so we need expertness civil engineer in our social.We live in an age of science.the computer is the most important of every sector.like as educational banking etc.we can not thing of our extiencetanc with out it.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+						<a href="" class="btn btn-info">Contact Us</a>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade"id="mymodal4">
+		<div class="modal-dialog">
+			<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Services hedline 4 </h4>
+					</div>
+					<div class="modal-body">
+						<p>We can not thinks of our recent world with out electricity .We can not thing of our extiencetanc with out it.so it is a most important of the world.we can see many largest building in our outer world. All that things introduction of civil.so we need expertness civil engineer in our social.We live in an age of science.the computer is the most important of every sector.like as educational banking etc.we can not thing of our extiencetanc with out it.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+						<a href="" class="btn btn-info">Contact Us</a>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+			<nav class="navbar navbar-expand-sm bg-secondary">
+				<div class="text-center">
+					<p class="text-white">Job Interview Management System..</p>
+				</div>	
+			</nav>	  
+	</div>
+			
+</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
+

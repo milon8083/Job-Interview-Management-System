@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link type="text/css" rel="stylrsheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+			  <a class="navbar-brand" href="#">
+				<img src="01.jpg" class=" img-fluid rounded" style=" max-width: 10%;  height: auto;" alt="logo"> 
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class=" ml-auto navbar-nav"style="color: #fff; font-family: Eras Demi ITC; font-size: 18px;">
+					<li class="nav-item active">
+					  <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Job Interview</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link " href="question.html">Job Question</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link " href="about.html">About US</a>
+					</li> 
+					<li class="nav-item">
+					  <a class="nav-link " data-toggle="modal" data-target="#myModal">Login</a>
+					</li>
+				</ul>
+				<form action="navbar-form" role="search">
+				  <div class="font-gorup">
+				  <input type="text" class="form-control" />
+				</form>
+			</div>
+			<button type="submit" class="btn btn-default">search</button>
+		</nav>
+  </header>
+
+  <div class="container-fluid">
+	<div class="modal fade" id="myModal">
+	  <div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		
+		  <!-- Modal Header -->
+		  <div class="modal-header">
+			<h4 class="modal-title">Login Form</h4>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		  </div>
+	  
+		  <!-- Modal body -->
+		  <div class="modal-body">
+			
+			  <form class="form" action="">
+		  
+					<label for="email">Email:</label>
+					  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+					<label for="pwd">Password:</label>
+					  <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input class="form-check-input" type="checkbox" name="remember"> Remember me
+					  </label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button> 
+				  <a href=""  data-toggle="modal" data-target="#myModalRegistration" ><button type="button" class="btn btn-primary">Registation</button></a>
+			  </form>  
+		  </div>
+		  
+		  <!-- Modal footer -->
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  </div>
+	  
+		  
+		</div>
+	  </div>
+	</div>
+
+   <!----- Registation Form  -->
+   
+   
+   <div class="modal fade" id="myModalRegistration">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+	  
+		<!-- Modal Header -->
+		<div class="modal-header">
+		  <h4 class="modal-title">Registation Form</h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+	
+		<!-- Modal body -->
+		<div class="modal-body">
+		  
+			<form class="form" action="RegistationForm.html">
+				<label for="name">Name:</label>
+				  <input type="name" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+				<label for="father's name">Father's Name:</label>
+				  <input type="father's name" class="form-control" id="Father's Name" placeholder="Enter Father's Name" name="Father's Name">
+				<label for="mother">Mother's Name:</label>
+				  <input type="mother" class="form-control" id="Mother's Name" placeholder="Enter Mother's Name" name="Mother's Name">
+				<label for="email">Email:</label>
+				  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				<label for="pwd">Password:</label>
+				  <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+				<div class="form-check">
+					<label class="form-check-label">
+					  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button> 
+			  
+			</form>  
+	  
+		</div>
+		
+		<!-- Modal footer -->
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+   
+      <h2>Accordion Example</h2>
+      <p>
+        <strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.
+      </p>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          What is the captital of Bangladesh?
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            What is your Greatest Acivement?
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+              What do you Know about our Company?
+            </a>
+        </div>
+        <div id="collapseThree" class="collapse">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+    </div>
+  </div>
+   
+   
+		
+        
+    
+	 
+	
+	<div class="footer">
+			<nav class="navbar navbar-expand-sm bg-secondary">
+				<div class="text-center">
+					<p class="text-white">Job Interview Management System..</p>
+				</div>
+			</nav>	  
+	</div>
+
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
+
